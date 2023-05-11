@@ -47,18 +47,60 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
+/* 
+step1:
+Create a project with required entities.
+
+step2:
+Create a module along with respective file name for both Multiplexer and De-multiplexer.
+
+step3:
+Run the module and get the respective RTL outputs.
+
+step4:
+Create university program(VWF) for getting timing diagram.
+
+step5:
+Give the respective inputs for timing diagram and obtain the results.
+*/
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: K SAGAR KRISHNA
+RegisterNumber: 212222110037
 */
-
-
+###4x1 Multiplexer:
+'''
+module 4mux ( s0,s1,a0,a1,a2,a3,y);
+input s0,s1,a0,a1,a2,a3;
+output y;
+wire a,b,c,d,s0bar,s1bar;
+not (s0bar,s0);
+not (s1bar,s1);
+and (a,s0,s1,a3);
+and (b,s0bar,s1,a2);
+and (c,s0,s1bar,a1);
+and (d,s0bar,s1bar,a0);
+or (y,a,b,c,d);
+endmodule
+'''
+###1x4 Demultiplexer:
+'''
+module demuxx(Y0,Y1,Y2,Y3,S0,S1,I);
+input I,S0,S1;
+output Y0,Y1,Y2,Y3;
+wire S0c,S1c;
+not(S0c,S0);
+nor(S1c,S1);
+and (Y0,I,S0c,S1c);
+and(Y1,I,S0c,S1);
+and(Y2,I,S0,S1c);
+and(Y3,I,S0,S1);
+endmodule
+'''
 
 
 
