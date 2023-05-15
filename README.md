@@ -105,7 +105,10 @@ endmodule
 
 
 
-### RTL LOGIC  
+### RTL LOGIC 1: 
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/mulrtl.png)
+### RTL LOGIC  2:
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/demulrtl.png)
 
 
 
@@ -113,18 +116,22 @@ endmodule
 
 
 
+### TIMING DIGRAMS  1:
 
-### TIMING DIGRAMS  
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/multd.png)
+### TIMING DIGRAMS  2:
 
-
-
-
-
-### TRUTH TABLE 
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/demultd.png)
 
 
+### TRUTH TABLE 1:
+
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/MultiplexerTT.png)
+### TRUTH TABLE 2:
+![output](https://github.com/srikarthickeyanganapathy/Exercise-07-Multiplexer-and-De--multiplexer/raw/main/DemultiplexerTT.png)
 
 
 
 
 ### RESULTS 
+Thus the Multiplexer and Demultiplexer circuits are designed and the truth table is verified using quartus software.
